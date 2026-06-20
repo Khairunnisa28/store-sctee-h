@@ -1,0 +1,104 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF9F2;
+    color: #4A3F35;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background: linear-gradient(
+        135deg,
+        #8B6F47,
+        #C9A66B
+    );
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover{
+    color: #FFF3D6 !important;
+}
+
+/* Cart Button */
+
+.navbar .btn-light{
+    background: #FFF9F2;
+    color: #8B6F47;
+    border: none;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+
+.navbar .btn-light:hover{
+    background: white;
+    transform: translateY(-2px);
+}
+
+/* Logout Button */
+
+.navbar .btn-danger{
+    background: #6B4F3A;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar .btn-danger:hover{
+    background: #543C2B;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero{
+    background: linear-gradient(
+        135deg,
+        #FFF9F2,
+        #FFF3E8
+    );
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1{
+    color: #8B6F47;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero p{
+    color: #7A7A7A;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: auto;
+}
+

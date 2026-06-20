@@ -65,5 +65,51 @@
         <button onclick="login()">Login</button>
         <p id="message"></p>
     </div>
+    <script>
+        function togglePassword() {
+            let pass = document.getElementById("password");
+
+            if (pass.type === "password") {
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
+
+        function login() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+            let message = document.getElementById("message");
+
+            // Conditional 1: cek input kosong
+            if (user === "" || pass === "") {
+                message.innerHTML = "⚠️ Semua field harus diisi!";
+                message.style.color = "red";
+                return;
+            }
+
+            // Conditional 2: validasi login
+            if (user === "admin" && pass === "123") {
+
+                message.innerHTML = "✅ Login berhasil!";
+                message.style.color = "green";
+
+                // simpan status login
+                localStorage.setItem("isLogin", "true");
+                localStorage.setItem("username", user);
+
+                // pindah ke index.html
+                setTimeout(function () {
+                    window.location.href = "index.html";
+                }, 1000);
+
+            } else {
+
+                message.innerHTML = "❌ Username atau password salah!";
+                message.style.color = "red";
+
+            }
+        }
+    </script>
 </body>
 </html>
