@@ -7,19 +7,19 @@ const products = [
         id: 1,
         name: "Chocolate Cake",
         price: 15.99,
-        image: "chocolate-cake.jpg"
+        image: "https://www.lifeloveandsugar.com/wp-content/uploads/2023/06/Raspberry-Chocolate-Cake3.jpg"
     },
     {
         id: 2,
         name: "Vanilla Cupcake",
         price: 3.99,
-        image: "vanilla-cupcake.jpg"
+        image: "https://bakesbybrownsugar.com/wp-content/uploads/2024/05/Strawberry-Filled-Vanilla-Cupcakes-19.jpg"
     },
     {
         id: 3,
         name: "Strawberry Tart",
         price: 7.49,
-        image: "strawberry-tart.jpg"
+        image: "https://www.rainbownourishments.com/wp-content/uploads/2025/06/vegan-strawberry-tart-1.jpg"
     }
 ];
 
